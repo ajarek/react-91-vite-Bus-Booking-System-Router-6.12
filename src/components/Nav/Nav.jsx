@@ -24,9 +24,10 @@ const Nav = () => {
             to={'/'}
           >
             <img
-              src=''
+              src='/images/logo.png'
               alt='logo'
             />
+           <h1> Bus Booking System</h1>
           </Link>
         </div>
 
@@ -35,7 +36,7 @@ const Nav = () => {
             className='link'
             to={'/'}
           >
-            <h1> HOME</h1>
+            <h1> Home</h1>
           </Link>
           
         </ul>
