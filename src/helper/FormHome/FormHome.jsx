@@ -9,6 +9,9 @@ export const FormHome = ({ onSubmit }) => {
     from: yup.string().required(),
     to: yup.string().required(),
     date: yup.string().required(),
+    time: yup.string().required(),
+    passengers: yup.string().required(),
+    myCheckbox: yup.boolean()
   })
 
   const {
@@ -27,6 +30,9 @@ export const FormHome = ({ onSubmit }) => {
         from: '',
         to: '',
         date: '',
+        time: '',
+        passengers: '',
+        myCheckbox:''
       })
     }
   }, [formState, reset])
@@ -65,6 +71,15 @@ export const FormHome = ({ onSubmit }) => {
       </select>
         <p>{errors.to?.message}</p>
       </div>
+
+      
+
+
+
+
+
+
+
       <div className='wrapper-input'>
         <input
           type='date'   
@@ -72,7 +87,29 @@ export const FormHome = ({ onSubmit }) => {
         />
         <p>{errors.date?.message}</p>
       </div>
+      <div className='wrapper-input'>
+        <input
+          type='time'   
+          {...register('time')}
+        />
+        <p>{errors.time?.message}</p>
+      </div>
+      <div className='wrapper-input'>
+        <input
+          type='number'   
+          placeholder='🧑🏻‍🤝‍👩🏻Passengers'
+          {...register('passengers')}
+        />
+        <p>{errors.passengers?.message}</p>
+      </div>
+      <div className='wrapper-input checkbox'>
+      
+      <label htmlFor="myCheckbox">Round-trip?</label>
+      
+          <input type="checkbox" id="myCheckbox" {...register('myCheckbox')}  />
+          <p>{errors.myCheckbox?.message}</p> 
      
+    </div >
       <div className='wrapper-input'>
         <input
           type='submit'

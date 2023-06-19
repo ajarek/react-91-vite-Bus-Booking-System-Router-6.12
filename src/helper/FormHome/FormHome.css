@@ -14,10 +14,13 @@ form {
  align-items: center;
  justify-content: space-between;
 }
-
+.checkbox{
+  flex-direction: row;
+  width: 180px;
+  justify-content: flex-end;
+}
 form label {
-  color: var(--ginger);
-  margin-right: 8px;
+  margin-right: 39px;
 }
 
 form input {
@@ -34,9 +37,12 @@ form input {
 }
 
 form input::placeholder {
-  color: var(--grey);
+  color: var(--black);
 }
-
+form input[type='checkbox'] {
+  width: 40px;
+  
+}
 form input[type='submit'] {
   color: var(--white);
   width: 180px;

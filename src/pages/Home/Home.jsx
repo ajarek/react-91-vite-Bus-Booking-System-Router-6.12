@@ -17,6 +17,7 @@ const Home = () => {
       <section className='section'>
         <h1>Book a Bus</h1>{alert?<div style={{color:'red'}}>cities no different</div>:null}
         <FormHome onSubmit={handleFormHome} />
+        
       </section>
     </div>
   )
