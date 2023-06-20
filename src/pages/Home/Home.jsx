@@ -8,8 +8,8 @@ const Home = () => {
   const [alert, setAlert] = useState(false)
   const navigate = useNavigate()
   const handleFormHome = (data) => {
-   data.from === data.to?setAlert(true):(setDataFormHome(data),setAlert(false))
-    
+   data.from === data.to?setAlert(true):(setDataFormHome(data),setAlert(false));
+    navigate('/select-bus')
   }
   console.log(dataFormHome)
   return (

@@ -1,0 +1,37 @@
+[
+  {
+  "id": "0",
+   "name":"volvo-9700",
+   "src":"/images/volvo-9700-select.png",
+   "passengers":"96",
+   "description":"The Volvo 9700 has many ways to make your journey more enjoyable. They can take advantage of the new, larger 21.5' HD screens. All infotainment devices are thoughtfully placed, and the upgraded and integrated radio system provides even higher quality sound."
+},
+  {
+  "id": "1",
+   "name":"volvo-9720",
+   "src":"/images/volvo-9700-select1.png",
+   "passengers":"82",
+   "description":"The Volvo 9720 has many ways to make your journey more enjoyable. They can take advantage of the new, larger 21.5' HD screens. All infotainment devices are thoughtfully placed, and the upgraded and integrated radio system provides even higher quality sound."
+},
+  {
+  "id": "2",
+   "name":"volvo-9750",
+   "src":"/images/volvo-9700-select2.png",
+   "passengers":"104",
+   "description":"The Volvo 97500 has many ways to make your journey more enjoyable. They can take advantage of the new, larger 21.5' HD screens. All infotainment devices are thoughtfully placed, and the upgraded and integrated radio system provides even higher quality sound."
+},
+  {
+  "id": "3",
+   "name":"volvo-9800",
+   "src":"/images/volvo-9700-select3.png",
+   "passengers":"116",
+   "description":"The Volvo 9800 has many ways to make your journey more enjoyable. They can take advantage of the new, larger 21.5' HD screens. All infotainment devices are thoughtfully placed, and the upgraded and integrated radio system provides even higher quality sound."
+},
+  {
+  "id": "4",
+   "name":"volvo-9900",
+   "src":"/images/volvo-9700-select4.png",
+   "passengers":"124",
+   "description":"The Volvo 9900 has many ways to make your journey more enjoyable. They can take advantage of the new, larger 21.5' HD screens. All infotainment devices are thoughtfully placed, and the upgraded and integrated radio system provides even higher quality sound."
+}
+]

@@ -38,6 +38,12 @@ const Nav = () => {
           >
             <h1> Home</h1>
           </Link>
+          <Link
+            className='link'
+            to={'/select-bus'}
+          >
+            <h1> SelectBus</h1>
+          </Link>
           
         </ul>
      
