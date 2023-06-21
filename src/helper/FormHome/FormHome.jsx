@@ -10,8 +10,7 @@ export const FormHome = ({ onSubmit }) => {
     to: yup.string().required(),
     date: yup.string().required(),
     time: yup.string().required(),
-    passengers: yup.string().required(),
-    myCheckbox: yup.boolean()
+    myCheckbox: yup.boolean(),
   })
 
   const {
@@ -31,8 +30,7 @@ export const FormHome = ({ onSubmit }) => {
         to: '',
         date: '',
         time: '',
-        passengers: '',
-        myCheckbox:''
+        myCheckbox: '',
       })
     }
   }, [formState, reset])
@@ -40,76 +38,63 @@ export const FormHome = ({ onSubmit }) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className='wrapper-input'>
-      <select
-        {...register('from')}
-        className='select'
-      >
-        <option value=''>From</option>
-        <option value='Gdańsk'>Gdańsk</option>
-        <option value='Kołobrzeg'>Kołobrzeg</option>
-        <option value='Poznań'>Poznań</option>
-        <option value='Rzeszów'>Rzeszów</option>
-        <option value='Warszawa'>Warszawa</option>
-        <option value='Szczecin'>Szczecin</option>
-        <option value='Kraków'>Kraków</option>
-      </select>
+        <select
+          {...register('from')}
+          className='select'
+        >
+          <option value=''>From</option>
+          <option value='Gdańsk'>Gdańsk</option>
+          <option value='Kołobrzeg'>Kołobrzeg</option>
+          <option value='Poznań'>Poznań</option>
+          <option value='Rzeszów'>Rzeszów</option>
+          <option value='Warszawa'>Warszawa</option>
+          <option value='Szczecin'>Szczecin</option>
+          <option value='Kraków'>Kraków</option>
+        </select>
         <p>{errors?.from?.message}</p>
       </div>
       <div className='wrapper-input'>
-      <select
-        {...register('to')}
-        className='select'
-      >
-        <option value=''>To</option>
-        <option value='Gdańsk'>Gdańsk</option>
-        <option value='Kołobrzeg'>Kołobrzeg</option>
-        <option value='Poznań'>Poznań</option>
-        <option value='Rzeszów'>Rzeszów</option>
-        <option value='Warszawa'>Warszawa</option>
-        <option value='Szczecin'>Szczecin</option>
-        <option value='Kraków'>Kraków</option>
-      </select>
+        <select
+          {...register('to')}
+          className='select'
+        >
+          <option value=''>To</option>
+          <option value='Gdańsk'>Gdańsk</option>
+          <option value='Kołobrzeg'>Kołobrzeg</option>
+          <option value='Poznań'>Poznań</option>
+          <option value='Rzeszów'>Rzeszów</option>
+          <option value='Warszawa'>Warszawa</option>
+          <option value='Szczecin'>Szczecin</option>
+          <option value='Kraków'>Kraków</option>
+        </select>
         <p>{errors.to?.message}</p>
       </div>
 
-      
-
-
-
-
-
-
-
       <div className='wrapper-input'>
         <input
-          type='date'   
+          type='date'
           {...register('date')}
         />
         <p>{errors.date?.message}</p>
       </div>
       <div className='wrapper-input'>
         <input
-          type='time'   
+          type='time'
           {...register('time')}
         />
         <p>{errors.time?.message}</p>
       </div>
-      <div className='wrapper-input'>
-        <input
-          type='number'   
-          placeholder='🧑🏻‍🤝‍👩🏻Passengers'
-          {...register('passengers')}
-        />
-        <p>{errors.passengers?.message}</p>
-      </div>
+      
       <div className='wrapper-input checkbox'>
-      
-      <label htmlFor="myCheckbox">Round-trip?</label>
-      
-          <input type="checkbox" id="myCheckbox" {...register('myCheckbox')}  />
-          <p>{errors.myCheckbox?.message}</p> 
-     
-    </div >
+        <label htmlFor='myCheckbox'>Round-trip?</label>
+
+        <input
+          type='checkbox'
+          id='myCheckbox'
+          {...register('myCheckbox')}
+        />
+        <p>{errors.myCheckbox?.message}</p>
+      </div>
       <div className='wrapper-input'>
         <input
           type='submit'
