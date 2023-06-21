@@ -44,6 +44,12 @@ const Nav = () => {
           >
             <h1> SelectBus</h1>
           </Link>
+          <Link
+            className='link'
+            to={'/summary/1'}
+          >
+            <h1> Summary</h1>
+          </Link>
           
         </ul>
      

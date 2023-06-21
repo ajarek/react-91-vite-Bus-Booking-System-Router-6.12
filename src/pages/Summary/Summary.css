@@ -1,0 +1,11 @@
+.summary{ 
+min-height: 100vh;
+width: 100%;
+padding: 89px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: var(--black);
+background-color: var(--red);
+}
