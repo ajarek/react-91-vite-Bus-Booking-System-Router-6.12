@@ -8,16 +8,22 @@ const Home = () => {
   const [alert, setAlert] = useState(false)
   const navigate = useNavigate()
   const handleFormHome = (data) => {
-   data.from === data.to?setAlert(true):(setDataFormHome(data),setAlert(false));
-    navigate('/select-bus')
+    if (data.from === data.to) {
+      setAlert(true)
+    }
+    if (data.from !== data.to) {
+      setDataFormHome(data)
+      setAlert(false)
+      navigate('/select-bus')
+    }
   }
   console.log(dataFormHome)
   return (
     <div className='home'>
       <section className='section'>
-        <h1>Book a Bus</h1>{alert?<div style={{color:'red'}}>cities no different</div>:null}
+        <h1>Book a Bus</h1>
+        {alert ? <div style={{ color: 'red' }}>cities no different</div> : null}
         <FormHome onSubmit={handleFormHome} />
-        
       </section>
     </div>
   )
