@@ -32,24 +32,13 @@ const Nav = () => {
         </div>
 
         <ul className={!isOpen ? 'wrapper' : 'wrapper navbar-none'}>
-          <Link
+          {/* <Link
             className='link'
             to={'/'}
           >
             <h1> Home</h1>
-          </Link>
-          <Link
-            className='link'
-            to={'/select-bus'}
-          >
-            <h1> SelectBus</h1>
-          </Link>
-          <Link
-            className='link'
-            to={'/summary/1'}
-          >
-            <h1> Summary</h1>
-          </Link>
+          </Link> */}
+          
           
         </ul>
      

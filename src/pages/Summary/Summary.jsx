@@ -24,11 +24,12 @@ const Summary = () => {
         <div className='from'>Departure from: {dataFormHome.from}</div>
         <div className='to'>Departure to: {dataFormHome.to}</div>
         <div className='distances'>Distances: {dataFormHome.myCheckbox ?distancesFilter[0].km*2:distancesFilter[0].km}km</div>
-        <div className='price'>Fare: {dataFormHome.myCheckbox ?distancesFilter[0].price*1.5:distancesFilter[0].price}PLN</div>
+        <div className='price'>Fare: {dataFormHome.myCheckbox ?distancesFilter[0].price*1.5*selectedBus.factor:distancesFilter[0].price*selectedBus.factor}PLN</div>
 
         {dataFormHome.myCheckbox ? <div>Round trip</div> : null}
       </div>
       <h2>{selectedBus.name}</h2>
+      <p>Passengers: {selectedBus.passengers}</p>
       <img
         src={selectedBus.src}
         alt={selectedBus.name}
