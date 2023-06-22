@@ -1,0 +1,128 @@
+[
+  { 
+    "id":"1",
+    "first": "Kołobrzeg",
+    "second":"Poznań",
+    "km":"377",
+    "price":"4524"
+  },
+  { 
+    "id":"2",
+    "first": "Warszawa",
+    "second":"Poznań",
+    "km":"311",
+    "price":"3732"
+  },
+  { 
+    "id":"3",
+    "first": "Gdańsk",
+    "second":"Poznań",
+    "km":"309",
+    "price":"3708"
+  },
+  { 
+    "id":"4",
+    "first": "Rzeszów",
+    "second":"Poznań",
+    "km":"621",
+    "price":"7452"
+  },
+  { 
+    "id":"5",
+    "first": "Szczecin",
+    "second":"Poznań",
+    "km":"263",
+    "price":"3156"
+  },
+  { 
+    "id":"6",
+    "first": "Kraków",
+    "second":"Poznań",
+    "km":"456",
+    "price":"5472"
+  },
+  { 
+    "id":"7",
+    "first": "Kraków",
+    "second":"Gdańsk",
+    "km":"596",
+    "price":"7152"
+  },
+  { 
+    "id":"8",
+    "first": "Kraków",
+    "second":"Kołobrzeg",
+    "km":"761",
+    "price":"9132"
+  },
+  { 
+    "id":"9",
+    "first": "Kraków",
+    "second":"Rzeszów",
+    "km":"167",
+    "price":"2004"
+  },
+  { 
+    "id":"10",
+    "first": "Kraków",
+    "second":"Warszawa",
+    "km":"290",
+    "price":"3480"
+  },
+  { 
+    "id":"11",
+    "first": "Kraków",
+    "second":"Szczecin",
+    "km":"647",
+    "price":"7764"
+  },
+  { 
+    "id":"12",
+    "first": "Kołobrzeg",
+    "second":"Szczecin",
+    "km":"132",
+    "price":"1584"
+  },
+  { 
+    "id":"13",
+    "first": "Gdańsk",
+    "second":"Szczecin",
+    "km":"370",
+    "price":"4440"
+  },
+  { 
+    "id":"14",
+    "first": "Rzeszów",
+    "second":"Szczecin",
+    "km":"812",
+    "price":"9744"
+  },
+  { 
+    "id":"15",
+    "first": "Warszawa",
+    "second":"Szczecin",
+    "km":"565",
+    "price":"6780"
+  },
+  { 
+    "id":"17",
+    "first": "Kołobrzeg",
+    "second":"Rzeszów",
+    "km":"925",
+    "price":"11100"
+  },
+  { 
+    "id":"18",
+    "first": "Kołobrzeg",
+    "second":"Warszawa",
+    "km":"680",
+    "price":"8160"
+  },
+  { 
+    "id":"19",
+    "first": "Rzeszów",
+    "second":"Warszawa",
+    "km":"331",
+    "price":"3972"
+  }
+]

@@ -1,10 +1,13 @@
-import { useState } from 'react'
+import { React, useState, useContext, useEffect } from 'react'
+import { AppContext } from '../../App'
+
 import { useNavigate } from 'react-router-dom'
 import { FormHome } from '../../helper/FormHome/FormHome'
 import './Home.css'
 
 const Home = () => {
-  const [dataFormHome, setDataFormHome] = useState(null)
+ 
+  const { dataFormHome, setDataFormHome } = useContext(AppContext)
   const [alert, setAlert] = useState(false)
   const navigate = useNavigate()
   const handleFormHome = (data) => {
@@ -17,7 +20,7 @@ const Home = () => {
       navigate('/select-bus')
     }
   }
-  console.log(dataFormHome)
+  
   return (
     <div className='home'>
       <section className='section'>

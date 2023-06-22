@@ -39,10 +39,10 @@ const router = createBrowserRouter([
     }
 ])
 function App() {
- 
+  const [dataFormHome, setDataFormHome] = useState(null)
   return (
     <div className='App'>
-      <AppContext.Provider value={{}}>
+      <AppContext.Provider value={{dataFormHome, setDataFormHome}}>
         <RouterProvider router={router} />
       </AppContext.Provider>
     </div>
