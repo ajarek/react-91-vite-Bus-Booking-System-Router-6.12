@@ -32,7 +32,7 @@ export const FormLogin = ({ onSubmit }) => {
   }, [formState, reset])
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className='form-login' onSubmit={handleSubmit(onSubmit)}>
       <div className='wrapper-input'>
         <label htmlFor='email'>Email Address</label>
         <input

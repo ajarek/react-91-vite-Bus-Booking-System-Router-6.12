@@ -6,6 +6,7 @@ import Home from './pages/Home/Home'
 import SelectBus from './pages/SelectBus/SelectBus'
 import Summary from './pages/Summary/Summary'
 import Login from './pages/Login/Login'
+import PaymentForm from './pages/PaymentForm/PaymentForm'
 import Error from './pages/Error/Error'
 
 const router = createBrowserRouter([
@@ -41,15 +42,21 @@ const router = createBrowserRouter([
         element: <Login />,
         errorElement: <Error />,
       },
+      {
+        path: '/payment-form',
+        element: <PaymentForm />,
+        errorElement: <Error />,
+      },
     ]
     }
 ])
 function App() {
   const [dataFormHome, setDataFormHome] = useState(null)
   const [isLogin, setIsLogin] = useState(false)
+  const [toPay, setToPay] = useState(0)
   return (
     <div className='App'>
-      <AppContext.Provider value={{dataFormHome, setDataFormHome, isLogin, setIsLogin}}>
+      <AppContext.Provider value={{dataFormHome, setDataFormHome, isLogin, setIsLogin, toPay, setToPay}}>
         <RouterProvider router={router} />
       </AppContext.Provider>
     </div>

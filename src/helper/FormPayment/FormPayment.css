@@ -1,20 +1,22 @@
-.form-login {
-  width: 100%;
-  height: 100%;
+.form-payment {
+  width: 770px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  justify-content: center;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0,0.5);
+  border-radius:25px ;
+  background-color: var(--blue);
 }
 
-.form-login label {
-  color: var(--blue);
+.form-payment label {
+  color: var(--white);
 }
 
-.form-login input {
-  width: 300px;
+.form-payment input {
+  width: 400px;
   height: 40px;
   padding: 1rem;
   font-size: 1.2rem;
@@ -25,47 +27,49 @@
   color: var(--black);
 }
 
-.form-login input::placeholder {
+.form-payment input::placeholder {
   color: var(--blue);
 }
 
-.form-login input[type='submit'] {
+.form-payment input[type='submit'] {
   color: var(--white);
-  width: 300px;
+  width: 400px;
   padding: 8px 16px;
   font-size: 1rem;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  background-color: var(--blue);
+  background-color: var(--red);
   margin-top: 22px;
 }
 
-.form-login input[type='submit']:hover {
+.form-payment input[type='submit']:hover {
   background-color: var(--green);
   color: var(--white);
 }
 
-.form-login .wrapper-input {
+.form-payment .wrapper-input {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.form-login p {
+.form-payment p {
   color: var(--red);
+  background-color: var(--white);
+  padding: 0 8px;
 }
 
 @media (max-width: 720px) {
-  .form-login {
+  .form-payment {
     width: 100%;
     align-items: center;
     justify-content: center;
   }
 
-  .form-login input,
-  .form-login input[type='submit'] {
+  .form-payment input,
+  .form-payment input[type='submit'] {
     width: 80vw;
   }
 }
