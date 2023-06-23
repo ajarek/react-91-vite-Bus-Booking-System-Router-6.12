@@ -1,4 +1,4 @@
-import { redirect, useParams, useNavigate } from 'react-router-dom'
+import { redirect, useParams, useNavigate,Link } from 'react-router-dom'
 import { React, useState, useContext, useEffect } from 'react'
 import { AppContext } from '../../App'
 import bus from '../../assets/bus.json'
@@ -24,7 +24,7 @@ const Summary = () => {
         <div className='from'>Departure from: {dataFormHome.from}</div>
         <div className='to'>Departure to: {dataFormHome.to}</div>
         <div className='distances'>Distances: {dataFormHome.myCheckbox ?distancesFilter[0].km*2:distancesFilter[0].km}km</div>
-        <div className='price'>Fare: {dataFormHome.myCheckbox ?distancesFilter[0].price*1.5*selectedBus.factor:distancesFilter[0].price*selectedBus.factor}PLN</div>
+        <div className='price'>Fare: {dataFormHome.myCheckbox ?(distancesFilter[0].price*1.5*selectedBus.factor).toFixed(2):(distancesFilter[0].price*selectedBus.factor).toFixed(2)}PLN</div>
 
         {dataFormHome.myCheckbox ? <div>Round trip</div> : null}
       </div>
@@ -34,6 +34,10 @@ const Summary = () => {
         src={selectedBus.src}
         alt={selectedBus.name}
       />
+      <div className="wrapper-links">
+      <Link to={'/'} className={'link-confirm'}>Back</Link>
+      <Link className={'link-confirm'}>I confirm</Link>
+      </div>
     </div>
   )
 }

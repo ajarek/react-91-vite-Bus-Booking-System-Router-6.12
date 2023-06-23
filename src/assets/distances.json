@@ -124,5 +124,19 @@
     "second":"Warszawa",
     "km":"331",
     "price":"3972"
+  },
+  { 
+    "id":"20",
+    "first": "Kołobrzeg",
+    "second":"Gdańsk",
+    "km":"245",
+    "price":"2940"
+  },
+  { 
+    "id":"21",
+    "first": "Rzeszów",
+    "second":"Gdańsk",
+    "km":"667.",
+    "price":"8004"
   }
 ]

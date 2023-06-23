@@ -7,5 +7,47 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 color: var(--black);
-background-color: var(--red);
+background-color: var(--grey);
 }
+.summary-data{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:4px;
+  font-size: 1.2rem;
+}
+.summary-data div{
+  margin-right: 16px;
+}
+ h2{
+  margin-top: 32px;
+  color: var(--blue);
+}
+.summary img{
+  width: 300px;
+  object-fit: cover;
+}
+.wrapper-links{
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+}
+.link-confirm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white);
+  width: 150px;
+  height: 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--blue);
+}
+.link-confirm:hover{background-color: var(--green);
+  color: var(--white);}
+  .link-confirm:nth-child(1){
+    background-color: red;
+  }
