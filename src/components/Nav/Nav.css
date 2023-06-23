@@ -47,7 +47,9 @@
   border: none;
   cursor: pointer;
 }
-
+.is-login{
+ font-size: 2rem;
+}
 
 
 

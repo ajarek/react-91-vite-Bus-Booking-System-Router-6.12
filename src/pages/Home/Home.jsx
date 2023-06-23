@@ -7,7 +7,7 @@ import './Home.css'
 
 const Home = () => {
  
-  const { dataFormHome, setDataFormHome } = useContext(AppContext)
+  const { dataFormHome, setDataFormHome,isLogin, setIsLogin } = useContext(AppContext)
   const [alert, setAlert] = useState(false)
   const navigate = useNavigate()
   const handleFormHome = (data) => {

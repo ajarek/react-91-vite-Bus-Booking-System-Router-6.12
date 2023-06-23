@@ -5,6 +5,7 @@ import Main from './layouts/Main/Main'
 import Home from './pages/Home/Home'
 import SelectBus from './pages/SelectBus/SelectBus'
 import Summary from './pages/Summary/Summary'
+import Login from './pages/Login/Login'
 import Error from './pages/Error/Error'
 
 const router = createBrowserRouter([
@@ -35,14 +36,20 @@ const router = createBrowserRouter([
           },
         ],
       },
+      {
+        path: '/login',
+        element: <Login />,
+        errorElement: <Error />,
+      },
     ]
     }
 ])
 function App() {
   const [dataFormHome, setDataFormHome] = useState(null)
+  const [isLogin, setIsLogin] = useState(false)
   return (
     <div className='App'>
-      <AppContext.Provider value={{dataFormHome, setDataFormHome}}>
+      <AppContext.Provider value={{dataFormHome, setDataFormHome, isLogin, setIsLogin}}>
         <RouterProvider router={router} />
       </AppContext.Provider>
     </div>

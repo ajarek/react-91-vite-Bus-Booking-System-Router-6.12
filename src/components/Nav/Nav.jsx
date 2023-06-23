@@ -8,6 +8,7 @@ import { React, useState, useContext } from 'react'
 import { AppContext } from '../../App'
 
 const Nav = () => {
+  const { dataFormHome, setDataFormHome,isLogin, setIsLogin } = useContext(AppContext)
   const [isOpen, setOpen] = useState(false)
 
   
@@ -32,14 +33,14 @@ const Nav = () => {
         </div>
 
         <ul className={!isOpen ? 'wrapper' : 'wrapper navbar-none'}>
-          {/* <Link
+          <Link
             className='link'
-            to={'/'}
+            to={'/login'}
           >
-            <h1> Home</h1>
-          </Link> */}
+            <h1> Login</h1>
+          </Link>
           
-          
+          {isLogin ? <span  className='is-login'>👍</span>:<span className='is-login'>👎</span>}
         </ul>
      
         <div className='hamburger'>
