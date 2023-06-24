@@ -5,9 +5,12 @@ import {FormPayment} from '../../helper/FormPayment/FormPayment'
 const PaymentForm = () => {
   const { dataFormHome, setDataFormHome, isLogin, setIsLogin, toPay, setToPay } =
   useContext(AppContext)
+  const handlePayment=(data) => {
+   console.log(data)
+  }
   return (
     <div className='payment-form'>
-      <FormPayment amount={toPay}/>
+      <FormPayment amount={toPay} onSubmit={handlePayment} />
     </div>
   )
 }

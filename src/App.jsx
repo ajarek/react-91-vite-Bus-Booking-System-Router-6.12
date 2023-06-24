@@ -7,6 +7,7 @@ import SelectBus from './pages/SelectBus/SelectBus'
 import Summary from './pages/Summary/Summary'
 import Login from './pages/Login/Login'
 import PaymentForm from './pages/PaymentForm/PaymentForm'
+import Register from './pages/Register/Register'
 import Error from './pages/Error/Error'
 
 const router = createBrowserRouter([
@@ -45,6 +46,11 @@ const router = createBrowserRouter([
       {
         path: '/payment-form',
         element: <PaymentForm />,
+        errorElement: <Error />,
+      },
+      {
+        path: '/register',
+        element: <Register />,
         errorElement: <Error />,
       },
     ]

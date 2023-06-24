@@ -1,34 +1,35 @@
-form {
+.form {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 8px;
 }
 
-form label {
-  color: var(--ginger);
+.form label {
+  color: var(--blue);
 }
 
-form input {
+.form input {
   width: 300px;
   height: 40px;
   padding: 1rem;
   font-size: 1.2rem;
   outline: none;
-  border: none;
+  border: 1px solid var(--black);
   border-radius: 5px;
   user-select: none;
   color: var(--black);
 }
 
-form input::placeholder {
-  color: var(--grey);
+.form input::placeholder {
+  color: var(--blue);
 }
 
-form input[type='submit'] {
+.form input[type='submit'] {
   color: var(--white);
   width: 300px;
   padding: 8px 16px;
@@ -36,34 +37,35 @@ form input[type='submit'] {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  background-color: var(--ginger);
+  background-color: var(--blue);
   margin-top: 22px;
 }
 
-form input[type='submit']:hover {
+.form input[type='submit']:hover {
   background-color: var(--green);
   color: var(--white);
 }
 
-.wrapper-input {
+.form .wrapper-input {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: start;
 }
 
-form p {
+.form p {
   color: var(--red);
 }
 
 @media (max-width: 720px) {
-  form {
+  .form {
     width: 100%;
     align-items: center;
     justify-content: center;
   }
 
-  form input,
-  form input[type='submit'] {
+  .form input,
+  .form input[type='submit'] {
     width: 80vw;
   }
 }

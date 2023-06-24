@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Hamburger from 'hamburger-react'
-
+import {fetchStorage} from '../../helper/localStorage'
 
 
 import './Nav.css'
@@ -10,7 +10,7 @@ import { AppContext } from '../../App'
 const Nav = () => {
   const { dataFormHome, setDataFormHome,isLogin, setIsLogin } = useContext(AppContext)
   const [isOpen, setOpen] = useState(false)
-
+  const user=fetchStorage('register')
   
 
  
@@ -35,12 +35,18 @@ const Nav = () => {
         <ul className={!isOpen ? 'wrapper' : 'wrapper navbar-none'}>
           <Link
             className='link'
+            to={'/register'}
+          >
+            <h1>Register</h1>
+          </Link>
+          <Link
+            className='link'
             to={'/login'}
           >
-            <h1> Login</h1>
+            <h1>Login</h1>
           </Link>
           
-          {isLogin ? <span  className='is-login'>👍</span>:<span className='is-login'>👎</span>}
+          {isLogin ? <span style={{color:'#05d69e'}} className='is-login'>👍 {user.name}</span>:<span style={{color:'#ff0000'}} className='is-login'>👎 Not logged in </span>}
         </ul>
      
         <div className='hamburger'>
