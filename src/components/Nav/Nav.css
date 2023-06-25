@@ -56,7 +56,7 @@
 
 .hamburger {
   position: absolute;
-  left: 16px;
+  right: 16px;
   top: 48%;
   transform: translateY(-50%);
   z-index: 2;
@@ -71,6 +71,12 @@
 }
 
 @media (max-width: 875px) {
+  .nav{
+    padding: 0 32px;
+  }
+  .nav img{
+    display: none;
+  }
   .nav .wrapper {
     flex-direction: column;
     justify-content: space-evenly;
@@ -82,7 +88,9 @@
     background: var(--black);
     height: 12rem;
   }
-
+  .nav h1{
+    font-size: 1.2rem;
+  }
   .link {
     transition: all 0.3s ease-in-out;
   }
@@ -103,14 +111,15 @@
 
 @media (max-width: 485px) {
   .nav {
-    padding: 0 32px;
+    padding: 0 8px;
   }
 
   .hamburger {
     position: absolute;
-    left: 180px;
+    
     top: 48%;
     transform: translateY(-50%);
     z-index: 2;
   }
+  
 }
