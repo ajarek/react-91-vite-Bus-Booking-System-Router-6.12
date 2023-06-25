@@ -39,7 +39,7 @@ const Summary = () => {
           ref={ref}
           className='price'
         >
-          spanFare:{' '}
+          Fare:{' '}
           {dataFormHome.myCheckbox ? (
             <span>
               {(distancesFilter[0].price * 1.5 * selectedBus.factor).toFixed(2)}
