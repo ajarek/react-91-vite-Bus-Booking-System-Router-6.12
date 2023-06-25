@@ -15,5 +15,5 @@
 ![Schowek06](https://github.com/ajarek/react-91-vite-Bus-Booking-System-Router-6.12/assets/61388692/782ca70f-a9b7-4a48-8f11-ba80f58980cb)
 ![Schowek07](https://github.com/ajarek/react-91-vite-Bus-Booking-System-Router-6.12/assets/61388692/4d163871-185a-474b-b235-17581b00870b)
 
-![Scho![Schowek02](https://github.com/ajarek/react-91-vite-Bus-Booking-System-Router-6.12/assets/61388692/0f589fa7-0b9c-4032-b0c8-7349b89a1623)
+![Schowek02](https://github.com/ajarek/react-91-vite-Bus-Booking-System-Router-6.12/assets/61388692/0f589fa7-0b9c-4032-b0c8-7349b89a1623)
 ![Schowek02](https://github.com/ajarek/react-91-vite-Bus-Booking-System-Router-6.12/assets/61388692/516f83f6-3b0e-4dd4-b4cf-7f6e2c272cbf)
