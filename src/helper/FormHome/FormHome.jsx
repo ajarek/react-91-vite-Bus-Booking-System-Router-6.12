@@ -84,7 +84,7 @@ export const FormHome = ({ onSubmit }) => {
         />
         <p>{errors.time?.message}</p>
       </div>
-      
+
       <div className='wrapper-input checkbox'>
         <label htmlFor='myCheckbox'>Round-trip?</label>
 

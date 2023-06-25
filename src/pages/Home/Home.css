@@ -5,12 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image:url('/images/depot-coaches.jpg') ;
+  background-image: url('/images/depot-coaches.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center ;
+  background-position: center;
 }
-.home .section{
+.home .section {
   width: 700px;
   min-height: 150px;
   display: flex;
@@ -22,16 +22,15 @@
   background-color: var(--black);
   color: var(--white);
   border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.home .section .inputs-wrapper h1{
+.home .section .inputs-wrapper h1 {
   font-size: 1.5rem;
   font-weight: 600;
 }
-@media (max-width:701px) {
-  .home .section{
+@media (max-width: 701px) {
+  .home .section {
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
-

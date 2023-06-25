@@ -1,14 +1,13 @@
-import { redirect, useParams, useNavigate, Link } from 'react-router-dom'
-import { React, useState, useContext, useEffect, useRef } from 'react'
+import { useParams, Link } from 'react-router-dom'
+import { React, useContext, useEffect, useRef } from 'react'
 import { AppContext } from '../../App'
 import bus from '../../assets/bus.json'
 import distances from '../../assets/distances.json'
 import './Summary.css'
 
 const Summary = () => {
-  const { dataFormHome, setDataFormHome, isLogin, setIsLogin, toPay, setToPay } =
-    useContext(AppContext)
-  const navigate = useNavigate()
+  const { dataFormHome, isLogin, setToPay } = useContext(AppContext)
+
   let ref = useRef(null)
   let { id } = useParams()
   const selectedBus = bus?.find((el) => el.id === id)
@@ -18,8 +17,7 @@ const Summary = () => {
       (el.first === dataFormHome.to && el.second === dataFormHome.from)
   )
   useEffect(() => {
-    setToPay(ref.current.children[0].innerText
-      )
+    setToPay(ref.current.children[0].innerText)
   })
 
   return (
@@ -42,9 +40,15 @@ const Summary = () => {
           className='price'
         >
           spanFare:{' '}
-          {dataFormHome.myCheckbox
-            ?<span>{(distancesFilter[0].price * 1.5 * selectedBus.factor).toFixed(2)}</span> 
-            : <span>{(distancesFilter[0].price * selectedBus.factor).toFixed(2)}</span> }
+          {dataFormHome.myCheckbox ? (
+            <span>
+              {(distancesFilter[0].price * 1.5 * selectedBus.factor).toFixed(2)}
+            </span>
+          ) : (
+            <span>
+              {(distancesFilter[0].price * selectedBus.factor).toFixed(2)}
+            </span>
+          )}
           PLN
         </div>
 

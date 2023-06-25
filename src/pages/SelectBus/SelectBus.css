@@ -9,8 +9,8 @@
   color: var(--black);
   background-color: var(grey);
 }
-.select-bus h1{
-  font-weight: 600; 
+.select-bus h1 {
+  font-weight: 600;
 }
 .card-bus {
   display: grid;
@@ -23,11 +23,11 @@
   background-color: var(--blue);
   color: var(--white);
 }
-.card-bus h2{
+.card-bus h2 {
   font-weight: 600;
   color: var(--white);
 }
-.card-bus span{
+.card-bus span {
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -42,11 +42,11 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  margin:0 32px;
+  margin: 0 32px;
 }
-.card-bus .select button{
+.card-bus .select button {
   color: var(--white);
-  margin-left: 32px; 
+  margin-left: 32px;
   padding: 8px 24px;
   font-size: 1rem;
   border: none;
@@ -61,16 +61,15 @@
   color: var(--white);
 }
 @media (max-width: 711px) {
-
-.card-bus{
-  grid-template-columns:  1fr;
-}
-.card-bus img{
-width: 80%;
-}
-.select-bus {
-  min-height: 100vh;
-  width: 100%;
-  padding: 8px;
-}
+  .card-bus {
+    grid-template-columns: 1fr;
+  }
+  .card-bus img {
+    width: 80%;
+  }
+  .select-bus {
+    min-height: 100vh;
+    width: 100%;
+    padding: 8px;
+  }
 }

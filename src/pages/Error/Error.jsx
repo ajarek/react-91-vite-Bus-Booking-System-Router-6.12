@@ -13,7 +13,6 @@ const Error = () => {
           className='btn btn-dark'
           onClick={() => navigate(-1)}
           style={{
-            
             border: '2px solid violet',
             marginTop: '1rem',
             marginBottom: '1rem',
@@ -36,7 +35,7 @@ const Error = () => {
             marginTop: '1rem',
             padding: '0 1rem',
             textDecoration: 'none',
-            color:'black'
+            color: 'black',
           }}
         >
           <span>Go Home 🏠</span>

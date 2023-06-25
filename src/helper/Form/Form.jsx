@@ -10,7 +10,6 @@ export const Form = ({ onSubmit }) => {
     email: yup.string().email().required(),
     password: yup.string().required(),
     phone: yup.string().required(),
-   
   })
 
   const {
@@ -28,14 +27,17 @@ export const Form = ({ onSubmit }) => {
       reset({
         name: '',
         email: '',
-        password:'',
+        password: '',
         phone: '',
       })
     }
   }, [formState, reset])
 
   return (
-    <form className='form' onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className='form'
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <div className='wrapper-input'>
         <label htmlFor='name'>Name</label>
         <input
@@ -45,7 +47,7 @@ export const Form = ({ onSubmit }) => {
         />
         <p>{errors?.name?.message}</p>
       </div>
-      
+
       <div className='wrapper-input'>
         <label htmlFor='email'>Email Address</label>
         <input
@@ -72,9 +74,7 @@ export const Form = ({ onSubmit }) => {
         />
         <p>{errors.phone?.message}</p>
       </div>
-     
-     
-     
+
       <div className='wrapper-input'>
         <input
           type='submit'

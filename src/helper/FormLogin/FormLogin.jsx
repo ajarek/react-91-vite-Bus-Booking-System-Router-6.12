@@ -6,10 +6,8 @@ import './FormLogin.css'
 import { useEffect } from 'react'
 export const FormLogin = ({ onSubmit }) => {
   const schema = yup.object().shape({
-    
     email: yup.string().email().required(),
     password: yup.string().min(4).max(12).required(),
-   
   })
 
   const {
@@ -26,13 +24,16 @@ export const FormLogin = ({ onSubmit }) => {
     if (formState.isSubmitSuccessful) {
       reset({
         email: '',
-        password:''
+        password: '',
       })
     }
   }, [formState, reset])
 
   return (
-    <form className='form-login' onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className='form-login'
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <div className='wrapper-input'>
         <label htmlFor='email'>Email Address</label>
         <input
@@ -49,7 +50,7 @@ export const FormLogin = ({ onSubmit }) => {
         />
         <p>{errors.password?.message}</p>
       </div>
-     
+
       <div className='wrapper-input'>
         <input
           type='submit'

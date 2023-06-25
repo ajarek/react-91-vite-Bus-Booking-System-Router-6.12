@@ -7,8 +7,8 @@ export const saveStorage = (newData, name) => {
   data.push(newData)
   localStorage.setItem(name, JSON.stringify(data))
 }
-export const saveStorageSingle  = (newData, name) =>{
-  localStorage.setItem(name, JSON.stringify(newData));
+export const saveStorageSingle = (newData, name) => {
+  localStorage.setItem(name, JSON.stringify(newData))
 }
 export const fetchStorage = (key) => {
   return JSON.parse(localStorage.getItem(key))
@@ -16,4 +16,3 @@ export const fetchStorage = (key) => {
 export const deleteStorage = (key) => {
   return localStorage.removeItem(key)
 }
-

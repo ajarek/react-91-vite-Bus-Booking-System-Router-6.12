@@ -53,8 +53,8 @@ const router = createBrowserRouter([
         element: <Register />,
         errorElement: <Error />,
       },
-    ]
-    }
+    ],
+  },
 ])
 function App() {
   const [dataFormHome, setDataFormHome] = useState(null)
@@ -62,7 +62,16 @@ function App() {
   const [toPay, setToPay] = useState(0)
   return (
     <div className='App'>
-      <AppContext.Provider value={{dataFormHome, setDataFormHome, isLogin, setIsLogin, toPay, setToPay}}>
+      <AppContext.Provider
+        value={{
+          dataFormHome,
+          setDataFormHome,
+          isLogin,
+          setIsLogin,
+          toPay,
+          setToPay,
+        }}
+      >
         <RouterProvider router={router} />
       </AppContext.Provider>
     </div>

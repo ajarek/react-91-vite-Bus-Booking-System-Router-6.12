@@ -47,12 +47,9 @@
   border: none;
   cursor: pointer;
 }
-.is-login{
- font-size: 2rem;
+.is-login {
+  font-size: 2rem;
 }
-
-
-
 
 .hamburger {
   position: absolute;
@@ -62,8 +59,6 @@
   z-index: 2;
 }
 
-
-
 @media (min-width: 876px) {
   .hamburger {
     display: none;
@@ -71,10 +66,10 @@
 }
 
 @media (max-width: 875px) {
-  .nav{
+  .nav {
     padding: 0 32px;
   }
-  .nav img{
+  .nav img {
     display: none;
   }
   .nav .wrapper {
@@ -88,7 +83,7 @@
     background: var(--black);
     height: 12rem;
   }
-  .nav h1{
+  .nav h1 {
     font-size: 1.2rem;
   }
   .link {
@@ -116,10 +111,9 @@
 
   .hamburger {
     position: absolute;
-    
+
     top: 48%;
     transform: translateY(-50%);
     z-index: 2;
   }
-  
 }

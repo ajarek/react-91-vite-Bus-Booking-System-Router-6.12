@@ -1,23 +1,18 @@
 import { Link } from 'react-router-dom'
 import Hamburger from 'hamburger-react'
-import {fetchStorage} from '../../helper/localStorage'
-
+import { fetchStorage } from '../../helper/localStorage'
 
 import './Nav.css'
 import { React, useState, useContext } from 'react'
 import { AppContext } from '../../App'
 
 const Nav = () => {
-  const { dataFormHome, setDataFormHome,isLogin, setIsLogin } = useContext(AppContext)
+  const { isLogin } = useContext(AppContext)
   const [isOpen, setOpen] = useState(false)
-  const user=fetchStorage('register')
-  
-
- 
+  const user = fetchStorage('register')
 
   return (
     <>
-    
       <nav className='nav'>
         <div className='logo'>
           <Link
@@ -28,7 +23,7 @@ const Nav = () => {
               src='/images/logo.png'
               alt='logo'
             />
-           <h1> Bus Booking System</h1>
+            <h1> Bus Booking System</h1>
           </Link>
         </div>
 
@@ -45,10 +40,24 @@ const Nav = () => {
           >
             <h1>Login</h1>
           </Link>
-          
-          {isLogin ? <span style={{color:'#05d69e'}} className='is-login'>👍 {user.name}</span>:<span style={{color:'#ff0000'}} className='is-login'>👎 Not logged in </span>}
+
+          {isLogin ? (
+            <span
+              style={{ color: '#05d69e' }}
+              className='is-login'
+            >
+              👍 {user.name}
+            </span>
+          ) : (
+            <span
+              style={{ color: '#ff0000' }}
+              className='is-login'
+            >
+              👎 Not logged in{' '}
+            </span>
+          )}
         </ul>
-     
+
         <div className='hamburger'>
           <Hamburger
             size={30}
